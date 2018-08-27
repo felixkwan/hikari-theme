@@ -401,6 +401,14 @@ ul.post-pagination li a:hover {
 
 </style>
 
+{block:IfGoogleAnalyticsID}
+<script>
+var _gaq=[['_setAccount','{text:Google Analytics ID}'],['_trackPageview']];
+(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+s.parentNode.insertBefore(g,s)}(document,'script'));
+</script>
+{/block:IfGoogleAnalyticsID}
 
 </head>
 
@@ -856,17 +864,6 @@ ul.post-pagination li a:hover {
 
 </div> <!-- /#wrapper -->
 
-
-
-
-{block:IfGoogleAnalyticsID}
-<script>
-var _gaq=[['_setAccount','{text:Google Analytics ID}'],['_trackPageview']];
-(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-s.parentNode.insertBefore(g,s)}(document,'script'));
-</script>
-{/block:IfGoogleAnalyticsID}
 </body>
 
 
