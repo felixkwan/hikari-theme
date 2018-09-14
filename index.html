@@ -796,7 +796,9 @@ s.parentNode.insertBefore(g,s)}(document,'script'));
       <ul class="counts clearfix">
       {block:NoteCount}
       <li class="note-count">
-          {block:IndexPage}<a href="{Permalink}#notes">{NoteCountWithLabel}</a>{/block:IndexPage}{block:PermalinkPage}<a class="tumblr-note-count" href="#notes">{NoteCountWithLabel}</a>{/block:PermalinkPage}
+          {block:IndexPage}<a href="{Permalink}#notes"></a>{/block:IndexPage}{block:PermalinkPage}<a class="tumblr-note-count" href="#notes"></a>{/block:PermalinkPage}
+              {NoteCountWithLabel}
+          </a>
       </li> <!-- /.note-count -->
       {/block:NoteCount}
       </ul> <!-- /.counts -->
