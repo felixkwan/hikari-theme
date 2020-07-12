@@ -740,6 +740,9 @@ s.parentNode.insertBefore(g,s)}(document,'script'));
 <!-- link post -->
 
 <div class="link-wrapper">
+    <div class"link-img-wrapper">
+        {block:Thumbnail}<img src="{Thumbnail}" data-highres="{Thumbnail-HighRes}" alt="{PhotoAlt}"/>{/block:Thumbnail}
+    </div>
     <a {Target} href="{URL}" class="link">{Name}&nbsp;<i class="fas fa-arrow-right"></i></a>
 </div>
 {block:Description}
